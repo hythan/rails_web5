@@ -62,3 +62,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'mini_racer' , '~> 0.2.6'
+
+gem 'bootstrap', '~> 4.3.1'
