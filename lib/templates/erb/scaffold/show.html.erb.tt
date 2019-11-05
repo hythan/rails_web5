@@ -1,0 +1,15 @@
+<h1><%%= t('listing', name: t('<%= singular_table_name %>.title', count: 1)) %></h1>
+
+<table class="table table-striped table-hover">
+
+<% attributes.reject(&:password_digest?).each do |attribute| -%>
+ <tr>
+   <th scope="row"><%%= t('<%= singular_table_name %>.<%= attribute.name %>') %>:</th>
+   <td><%%= @<%= singular_table_name %>.<%= attribute.name %> %></td>
+ </tr>
+<% end -%>
+
+</table>
+
+<%%= link_to t('edit'), edit_<%= singular_table_name %>_path(@<%= singular_table_name %>), class: 'btn btn-primary', role: :button %>
+<%%= link_to t('index'), <%= index_helper %>_path, class: 'btn btn-outline-secondary', role: :button %>
