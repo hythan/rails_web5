@@ -1,0 +1,15 @@
+pt-BR:
+  index: Listagem
+  listing: Listagem
+  actions: Ações
+  show: Exibir
+  destroy: Remover
+  edit: Editar
+  new: Novo
+  contact:
+    title:
+      zero: Contato
+      one: Contato
+      other: Contatos
+    name: Nome
+    birthday: Nascimento

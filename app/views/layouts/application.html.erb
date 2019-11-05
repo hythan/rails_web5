@@ -15,6 +15,8 @@
     <div class="collapse navbar-collapse">
       <div class="navbar-nav">
         <%= link_to t('items'), items_path, class: 'nav-item nav-link' %>
+        <%= link_to 'pt-BR', root_path(locale: 'pt-BR'), class: 'nav-item nav-link'%>
+        <%= link_to 'en', root_path(locale: 'en'), class: 'nav-item nav-link'%>
       </div>
     </div>
   </nav>
