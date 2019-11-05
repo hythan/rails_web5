@@ -61,14 +61,28 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Integração com bootstrap
 gem 'mini_racer' , '~> 0.2.6'
 
 gem 'bootstrap', '~> 4.3.1'
+######################
 
+# Formulalrios de maneira mais simplificada
 gem 'simple_form', '~> 5.0','>= 5.0.1'
+##################
 
+# Tradutor
 gem 'rails-i18n', '~> 5.1', '>= 5.1.3'
+###############3
+
+# Paginação de listas
 
 gem 'will_paginate', '~> 3.2', '>= 3.2.1'
 gem 'will_paginate-bootstrap', git: 'https://github.com/benitkibabu/will_paginate-bootstrap'
 gem 'will-paginate-i18n', '~> 0.1.15'
+###############
+
+# Upload de arquivos
+gem 'carrierwave', '~> 2.0', '>= 2.0.2'
+gem 'carrierwave-i18n', '~> 0.2.0'
+#########################

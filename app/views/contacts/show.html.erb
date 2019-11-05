@@ -1,4 +1,5 @@
 <h1><%= t('listing', name: t('contact.title', count: 1)) %></h1>
+<%= image_tag(@contact.avatar_url, class: 'rounded mx-auto d-block') if @contact.avatar? %>
 
 <table class="table table-striped table-hover">
 
