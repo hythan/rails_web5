@@ -92,3 +92,7 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'devise-i18n', '~> 1.8', '>= 1.8.2'
 gem 'devise-bootstrap-views', '~> 1.1'
 #######################
+
+# Permições
+gem 'cancancan', '~> 3.0', '>= 3.0.1'
+#########

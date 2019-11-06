@@ -3,7 +3,8 @@ class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.json
   def index
-    @contacts = Contact.paginate(page: params[:page],per_page: 1)
+    @contacts = Contact.where(user_id: current_user.id)
+    @contacts = @contacts.paginate(page: params[:page],per_page: 1)
   end
 
   # GET /contacts/1
@@ -69,7 +70,7 @@ class ContactsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contact_params
-      params.require(:contact).permit(:name, :birthday, :avatar,
+      params.require(:contact).permit(:name, :birthday, :avatar, :user_id,
                                       phones_attributes: [:id, :number, :default])
 
     end

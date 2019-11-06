@@ -6,6 +6,7 @@
   <div class="form-inputs">
     <%= f.input :name %>
     <%= f.input :birthday %>
+    <%= f.input :user_id, as: :hidden, input_html: {value: current_user.id}%>
     <%= f.input :avatar, as: :file %>
   </div>
   <%= f.simple_fields_for :phones do |p| %>
