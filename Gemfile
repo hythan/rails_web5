@@ -83,7 +83,7 @@ gem 'will-paginate-i18n', '~> 0.1.15'
 ###############
 
 # Upload de arquivos
-gem 'carrierwave', '~> 2.0', '>= 2.0.2'
+gem 'carrierwave', '~> 2.1'
 gem 'carrierwave-i18n', '~> 0.2.0'
 #########################
 
